@@ -8,7 +8,7 @@ import Lottie from 'react-lottie';
 
 
 export interface WeatherProps {
-  weatherEnum: Weather;
+  weatherEnum?: Weather;
 }
 
 export enum Weather {

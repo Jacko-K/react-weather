@@ -15,7 +15,7 @@ interface Day {
 export interface CardProps {
     className?: string;
     day: Day;
-    weatherEnum: Weather | undefined;
+    weatherEnum?: Weather;
 }
 
 /**
