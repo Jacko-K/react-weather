@@ -1,0 +1,26 @@
+.root {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.img1 {
+    width: auto;
+    height: 20em;
+padding:1px;
+}
+.main-heading {
+    color: #fdfdfd;
+    font-size: 5vw;
+    min-font-size: 1em;
+    max-font-size: 6em;
+    text-align: center;
+    margin: 0.25em;
+}
+.main-temp {
+    color: #fdfdfd;
+    font-size: 5vw;
+    min-font-size: 1em;
+    text-align: center;
+    margin: 3px;
+}

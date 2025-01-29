@@ -1,0 +1,32 @@
+.Main{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.App {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: radial-gradient(circle at 50% 50%, #3b4e9a 0%, #1e2460 100%);
+    background-color: transparent;
+    background-position: 0% 0%;
+    background-size: auto;
+    background-repeat: repeat;
+    background-attachment: scroll;
+    background-origin: padding-box;
+    background-clip: border-box;
+    max-width: 50vw;
+    min-width: 45vw;
+    height: auto;
+    border-radius: 40px;
+    padding: 20px;
+}
+.card-container {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
