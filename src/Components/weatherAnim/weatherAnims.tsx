@@ -16,7 +16,8 @@ export enum Weather {
   lightrain = 'lightrain',
   cloudy = 'cloudy',
   pcloudy = 'pcloudy',
-  ishower = 'ishower'
+  ishower = 'ishower',
+  mcloudy = 'mcloudy'
 }
 export type WeatherType = `${Weather}`;
 
@@ -25,7 +26,8 @@ const animMap = new Map<Weather, unknown>([
   [Weather.cloudy, cloudyAnim],
   [Weather.lightrain, lightRainAnim],
   [Weather.pcloudy, cloudyAnim],
-  [Weather.ishower, lightRainAnim]
+  [Weather.ishower, lightRainAnim],
+  [Weather.mcloudy, cloudyAnim]
 ]);
 
 export const WeatherAnims = ({weatherEnum}:WeatherProps) => {

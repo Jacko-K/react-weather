@@ -1,6 +1,7 @@
 import styles from './card.module.scss';
+
 import cx from 'classnames';
-import {Weather, WeatherAnims} from "../SunnyAnimation/weatherAnims.tsx";
+import {Weather, WeatherAnims} from "../weatherAnim/weatherAnims.tsx";
 
 interface Day {
   date: number,
@@ -30,11 +31,13 @@ export const Card = ({ className, day, weatherEnum }: CardProps) => {
   const dayOfTheMonth = Number(date.slice(6,8))
   const formattedDate = new Date(year, month -1, dayOfTheMonth).toString().slice(0,3);
     return (
+      <div className={"transition-all duration-300 hover:scale-120"}>
         <div className={cx(styles.root, className)}>
             <p className={styles['card-paragraph']}>{formattedDate}</p>
             <WeatherAnims weatherEnum={weatherEnum}/>
             <h2 className={styles['card-heading']}>{day.temp2m.max}°C</h2>
             <p className={styles['card-paragraph']}>{day.weather}</p>
         </div>
+      </div>
     );
 };

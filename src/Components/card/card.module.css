@@ -8,10 +8,14 @@
   border: 0px solid black;
   border-radius: 20px;
   box-shadow: 2.83px 2.83px 10px #272626;
-  opacity: 0.42;
   background-color: rgba(255, 255, 255, 0.1);
   margin: 10px;
   padding: 10px;
+  opacity: 0.42;
+  transition: opacity 0.3s ease-in-out;
+}
+.root:hover {
+  opacity: 1;
 }
 
 .card-img {

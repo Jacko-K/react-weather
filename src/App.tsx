@@ -5,7 +5,7 @@ import {Header} from './Components/header/header.tsx';
 import {MainCard} from './Components/main-card/main-card.tsx';
 import {Card} from './Components/card/card.tsx';
 import {Footer} from './Components/footer/footer.tsx';
-import {Weather, WeatherAnims} from "./Components/SunnyAnimation/weatherAnims.tsx";
+import {Weather, WeatherAnims} from "./Components/weatherAnim/weatherAnims.tsx";
 
 interface Day {
   date: number;
